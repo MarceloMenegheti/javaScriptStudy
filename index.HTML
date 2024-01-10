@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1> Apenas para Estudo de funcionabilidades do JavaScript.</h1>
+
+
+<div>
+    <h2>What Can JavaScript Do?</h2>
+    <p id="demo">JavaScript pode esconder elementos HTML.</p>
+    <button type="button" onclick="document.getElementById('demo').style.display='none'">Click Me!</button>
+</div>
+
+
+
+<div>
+    <h2>What Can JavaScript Do?</h2>
+    <p id="demo_1">JavaScript pode alterar o conteudo HTML.</p>
+    <button type="button" onclick='document.getElementById("demo_1").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+</div>
+
+
+
+<div>
+    <h2>What Can JavaScript Do?</h2>
+    <p id="demo_2">JavaScript pode mudar o estilo de um elemento HTML.</p>
+    <button type="button" onclick="document.getElementById('demo_2').style.fontSize='35px'">Click Me!</button>
+</div>
+
+
+
+<div>
+    <h2>What Can JavaScript Do?</h2>
+    <p>JavaScript pode mostrar um elemento oculto HTML.</p>
+    <p id="demo_3" style="display:none">OLA JavaScript!</p>
+    <button type="button" onclick="document.getElementById('demo_3').style.display='block'">Click Me!</button>
+</div>
+
+
+
+<div>
+    <h2>Demo External JavaScript</h2>
+    <p id="demo_4">Um Paragrafo.</p>
+    <button type="button" onclick="myFunctionp()">Try it</button>
+    <p>This example links to "javaScriptStudy.js".</p>
+    <p>(myFunction is stored in "javaScriptStudy.js")</p>
+</div>
+
+
+<!--apenas para fins de TESTE-->
+<div>
+    <h2>PULE</h2>
+    <p>NAO CLICK apenas para teste.</p>
+    <button type="button" onclick="document.write(404)">NÂO</button>
+</div>
+<!----->
+
+
+<div>
+    <h2>Exibindo um ALERT</h2>
+    <p>numero exibido 11.</p>
+    <script>
+    window.alert(404);
+    </script>
+</div>
+
+
+<!---Captura de tela-->
+<div>
+    <h2>Captura De Tela </h2>
+    <button onclick="window.print()">"print" </button>
+</div>
+
+
+
+<div>
+    <h2>JavaScript Declaracoes</h2>
+    <p>Os blocos de código JavaScript são escritos entre {  }</p>
+    <button type="button" onclick="myFunction()">Click Me!</button>
+    <p id="demo_5"></p>
+    <p id="demo_6"></p>
+</div>
+
+
+
+<div>
+    <h2>JavaScript const</h2>
+    <p>Declarar um array constante não torna os elementos imutaveis:</p>
+    <p id="demo_7">-------</p>
+<script>
+    // Criar um Array:
+    const cars = [" Ferrari", " Fusca", " BMW"];
+
+    // Mudar um element:
+    cars[2] = " BMW";
+
+    // addicionar um element:
+    cars.push(" Astra");
+
+    // Display the Array:
+    document.getElementById("demo_7").innerHTML = cars; 
+</script>
+</div>
+
+
+<div>
+    <h2>JavaScript const</h2>
+    <p>Declarar um objeto constante não torna as propiedades do objeto imutaveis:</p>
+    <p id="demo_8"></p>
+    <script>
+        // voce pode criar um objeto conts:
+        const car = {type:"Fiat", model:"500", color:"white"};
+
+        // voce pode mudar uma propiedade:
+        car.color = "red";
+
+        // voce pode adicionar uma propiedade:
+        car.owner = "Marcelo";
+
+        // Mostra o Propiedade:
+        document.getElementById("demo_8").innerHTML = "O Propietario do carro é o " + car.owner; 
+    </script>
+</div>
+
+<script src="javaScriptStudy.js"></script>
+</body>
+</html> 
